@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket </title>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@300;400;700&family=Lato:wght@300;400;700&family=Manrope:wght@200..800&family=Merriweather:wght@400;700;900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500;600;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .font-Raleway {
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-Raleway">
+    <header class="container mx-auto">
+        <nav>
+
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-extrabold">SM-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-medium text-lg">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn font-extrabold bg-lime-50 text-lime-500 ">Bus<img class="size-[24px] "
+                            src="images/bus-logo.png" alt=""></a>
+                </div>
+            </div>
+        </nav>
+        <!-- banner section -->
+        <section>
+            <div class="hero h-[400px] lg:h-[600px] rounded-3xl" style="background-image: url(images/banner.png);">
+                <div class=""></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="lg:w-2/3">
+                        <h1 class="mb-5 text-2xl lg:text-6xl font-extrabold">End-to-End Travel with <span
+                                class="text-lime-500 ">SM-Paribahan</span></h1>
+                        <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The
+                            integrated testing features allow for a streamlined .</p>
+                        <button class="btn btn-success">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="container mx-auto">
+        <!-- card section -->
+        <section>
+            <h1 class="text-4xl font-bold mt-24 text-center mb-12">Best offers for you</h1>
+            <div class="lg:flex  flex-col-1 lg:flex-col-2 gap-4">
+                <div class="card w-full lg:w-1/2 bg-warning text-neutral-content">
+                    <div class=" lg:flex  justify-between items-center p-12 text-black">
+                        <div>
+                            <h2 class="font-black text-4xl">15% OFF</h2>
+                            <p class="font-extrabold text-2xl p-2">on your next purchase</p>
+                            <p class="p-2">use by January 2024</p>
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-3xl">NEW15</h1>
+                            <p class="text-xl p-4">Coupon Code</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card lg:w-1/2 bg-error text-neutral-content">
+                    <div class=" lg:flex  justify-between items-center p-12 text-black">
+                        <div>
+                            <h2 class="font-black text-4xl">20% OFF</h2>
+                            <p class="font-extrabold text-2xl p-2">on your next purchase</p>
+                            <p class="p-2">use by January 2024</p>
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-3xl">Couple 20</h1>
+                            <p class="text-xl p-4">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-outline btn-success font-bold text-xl pl-12 pr-12 mt-14">See All Offers</button>
+            </div>
+        </section>
+        <!-- P.H Paribahan section -->
+        <section class="mt-28 bg-slate-300 p-10 rounded-lg">
+            <div class="text-center">
+                <h1 class="font-bold text-4xl mb-6">P.H Paribahan</h1>
+                <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                    features allow for a streamlined .</p>
+            </div>
+            <!-- Greenline Paribahan -->
+            <div class="lg:flex justify-between items-center mt-20">
+                <div class="lg:flex justify-between items-center lg:w-3/4">
+                    <div class="lg:flex justify-center items-center gap-5 ">
+                        <img src="images/bus-logo.png" alt="">
+                        <div>
+                            <h1 class="font-bold text-3xl">Greenline Paribahan</h1>
+                            <p>Coach-009-WEB ! AC_Business</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="btn font-extrabold bg-lime-50 text-lime-500 "><img src="images/seat-gray.png" alt="">
+                            40 Seats left</a>
+                    </div>
+                </div>
+
+                <div>
+                    <img class="mb-3" src="images/fare.png" alt="">
+                    <h1 class="font-bold text-3xl mb-3">550 Taka</h1>
+                    <p class="font-extrabold text-xl">Per Seat</p>
+                </div>
+            </div>
+            <div class="bg-slate-100 lg:w-3/4 mt-12 p-8">
+                <div class="flex justify-between items-center">
+                    <h1>Route</h1>
+                    <p>Dhaka - Sylhet</p>
+                </div>
+
+                <div class="flex justify-between items-center mt-12 ">
+                    <h1>Departure Time</h1>
+                    <p>9:00 PM</p>
+                </div>
+                <div class="lg:flex gap-3 flex-col-1 lg:flex-col-3 justify-between mt-12">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Boarding Point-Laxmipur</button>
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Dropping Point - Bogura</button>
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Est. Time - 11 Hour</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Select Your Seat -->
+        <section class="mt-6">
+            <div class="flex gap-7">
+                <div class="w-3/5">
+                    <h1 class="text-2xl font-bold">Select Your Seat</h1>
+                    <div class="mt-6 flex justify-between items-center">
+                        <h2 class="flex gap-3"><img src="images/seat-gray.png" alt=""> <span
+                                class="font-medium">Available</span></h2>
+                        <p class="flex gap-3"><img src="images/seat-green-filled.png" alt=""> <span
+                                class="font-semibold text-xl">Selected</span></p>
+                    </div>
+                    <div class="flex justify-end mt-4">
+                        <kbd class="kbd"><img src="images/seat-green.png" alt=""></kbd>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mt-5">
+                            <h1>A</h1>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A1</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A2</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A3</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A4</kbd>
+                        </div>
+                        <div class="flex justify-between items-center mt-5">
+                            <h1>A</h1>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A1</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A2</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A3</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A4</kbd>
+                        </div>
+                        <div class="flex justify-between items-center mt-5">
+                            <h1>A</h1>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A1</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A2</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A3</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A4</kbd>
+                        </div>
+                        <div class="flex justify-between items-center mt-5">
+                            <h1>A</h1>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A1</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A2</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A3</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A4</kbd>
+                        </div>
+                        <div class="flex justify-between items-center mt-5">
+                            <h1>A</h1>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A1</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A2</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A3</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A4</kbd>
+                        </div>
+                        <div class="flex justify-between items-center mt-5">
+                            <h1>A</h1>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A1</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A2</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A3</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A4</kbd>
+                        </div>
+                        <div class="flex justify-between items-center mt-5">
+                            <h1>A</h1>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A1</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A2</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A3</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A4</kbd>
+                        </div>
+                        <div class="flex justify-between items-center mt-5">
+                            <h1>A</h1>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A1</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A2</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A3</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A4</kbd>
+                        </div>
+                        <div class="flex justify-between items-center mt-5">
+                            <h1>A</h1>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A1</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A2</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A3</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A4</kbd>
+                        </div>
+                        <div class="flex justify-between items-center  mt-5">
+                            <h1>A</h1>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A1</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A2</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A3</kbd>
+                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A4</kbd>
+                        </div>
+                    </div>
+                </div>
+                <div >
+                    <h1 class="text-2xl font-bold">Select Your Seat</h1>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
