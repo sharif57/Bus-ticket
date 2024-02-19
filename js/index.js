@@ -64,12 +64,14 @@ btn.addEventListener('click', function () {
         const grandTotal = document.getElementById('discount')
         const discountAmount = total - (total * 15 / 100);
         grandTotal.innerText = discountAmount
+        hideElementById('applyId')
 
     }
     else if (couponCode === 'COUPLE20') {
         const grandTotal = document.getElementById('discount')
         const discountAmount = total - (total * 20 / 100);
         grandTotal.innerText = discountAmount;
+        hideElementById('applyId')
     }
     else {
         alert('plz current coupon code')
