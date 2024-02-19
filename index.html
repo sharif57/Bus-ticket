@@ -24,7 +24,7 @@
 </head>
 
 <body class="font-Raleway">
-    <header class="container mx-auto">
+    <header id="header" class="container mx-auto">
         <nav>
 
             <div class="navbar bg-base-100">
@@ -77,7 +77,7 @@
             </div>
         </section>
     </header>
-    <main class="container mx-auto">
+    <main id="main" class="container mx-auto">
         <!-- card section -->
         <section class="sm: p-3">
             <h1 class="text-4xl font-bold lg:mt-24 text-center mb-12">Best offers for you</h1>
@@ -116,7 +116,7 @@
         <!-- P.H Paribahan section -->
         <section class="mt-28 bg-slate-300 p-10 rounded-lg">
             <div class="text-center">
-                <h1 class="font-bold text-4xl mb-6">P.H Paribahan</h1>
+                <h1 class="font-bold text-4xl mb-6">S.M Paribahan</h1>
                 <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing
                     features allow for a streamlined .</p>
             </div>
@@ -272,6 +272,7 @@
                             <input id="input-field" type="text" placeholder="Have any coupon?"
                                 class="input input-bordered w-full" />
                             <button id="btn-apply" class="btn join-item  btn-primary">Apply</button>
+
                         </div>
                         <div class="flex justify-between items-center mt-6 font-extrabold text-xl">
                             <h1>Grand Total</h1>
@@ -292,25 +293,42 @@
                             <h1 class="text-xl font-bold mb-4">Email ID</h1>
                             <input type="text" placeholder="Enter your mail" class="input input-bordered w-full" />
                         </div>
-                        <button class="btn btn-success w-full mt-6 font-extrabold text-xl text-white">Next</button>
+                        <button onclick="done()" class="btn btn-success w-full mt-6 font-extrabold text-xl text-white">Next</button>
+                        <!-- <img src="images/success.png" alt=""> -->
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer p-10 bg-neutral text-neutral-content container mx-auto">
+    <footer id="footer" class="mt-10 footer p-10 bg-black text-neutral-content container mx-auto">
         <div class=" flex justify-between items-center lg:gap-[900px]">
             <aside>
                 <h1 class="font-extrabold text-3xl lg:text-6xl">SM-Ticket</h1>
-                <p>ACME Industries Ltd.<br>Providing reliable tech since 1992</p>
+                <p>P-Ticket is a digital platform to make your <br> daily commuting better.</p>
             </aside>
             <nav>
                 <h6 class="footer-title font-extrabold text-2xl">Social</h6>
-                
+                <button class="flex justify-center items-center gap-4 border-solid border-2 border-white p-3 rounded-lg"><img src="images/playstore.png" alt="">Play Store</button>
             </nav>
         </div>
+       <hr>
     </footer>
+    <section id="show" class="container-sm mx-auto shadow-inner lg:mt-[300px] hidden">
+        <div class="flex flex-col justify-center items-center">
+            <div class="text-center">
+                <img src="images/success.png" alt="">
+                <h1 class="text-2xl font-extrabold text-[#27AE60sd] lg:pt-10">SUCCESS</h1>
+            </div>
+            <div class="text-center lg:pt-10">
+                <h3 class="text-xl font-semibold">Thank you for Booking Our Bus Seats.
+                    <h3 class="text-xl font-semibold">We are working hard to find the best service and deals for you.</h3>
+                </h3>
+                <p class="pt-2 pb-2">Shortly you will find a confirmation in your email.</p>
+                <button class="btn btn-success rounded-r-full rounded-l-full pr-[100px] pl-[100px] text-white">Continue</button>
+            </div>
+        </div>
+    </section>
 
     <script src="js/index.js"></script>
 </body>

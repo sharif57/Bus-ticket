@@ -16,6 +16,7 @@ for (const btn of allBtn) {
         const titleContainer = document.getElementById('container')
         const div = document.createElement('div')
 
+
         div.classList.add('flex')
         div.classList.add('lg:gap-[240px]')
         div.classList.add('gap-[56px]')
@@ -37,7 +38,12 @@ for (const btn of allBtn) {
         titleContainer.appendChild(div);
 
         total = total + prices;
-        document.getElementById('total').innerText = total
+        document.getElementById('total').innerText = total;
+
+        const grandTotal = document.getElementById('discount')
+        const discountAmount = total;
+        grandTotal.innerText = discountAmount
+
     })
 
 }
@@ -51,6 +57,7 @@ btn.addEventListener('click', function () {
         const grandTotal = document.getElementById('discount')
         const discountAmount = total - (total * 15 / 100);
         grandTotal.innerText = discountAmount
+
     }
     else if (couponCode === 'COUPLE20') {
         const grandTotal = document.getElementById('discount')
@@ -60,5 +67,20 @@ btn.addEventListener('click', function () {
     else {
         alert('plz current coupon code')
     }
-
 })
+
+function hideElementById(elementId){
+    const element = document.getElementById(elementId)
+    element.classList.add('hidden')
+}
+function showElementById(elementId){
+    const element = document.getElementById(elementId)
+    element.classList.remove('hidden')
+}
+
+function done(){
+    hideElementById('header')
+    hideElementById('main')
+    hideElementById('footer')
+    showElementById('show')
+}
