@@ -5,9 +5,16 @@ let countLoss = 40;
 let total = 0;
 for (const btn of allBtn) {
     btn.addEventListener('click', function () {
-        btn.classList.add('bg-green-400')
         count = count + 1;
-        document.getElementById('seat-count').innerText = count
+        
+        if (count > 4) {
+            alert('one person must have four seat!')
+            count.removeEventListener('click', function () {
+
+            })
+        }
+        document.getElementById('seat-count').innerText = count;
+        btn.classList.add('bg-green-400')
         countLoss = countLoss - 1;
         document.getElementById('seat-loss').innerText = countLoss;
 
@@ -69,16 +76,16 @@ btn.addEventListener('click', function () {
     }
 })
 
-function hideElementById(elementId){
+function hideElementById(elementId) {
     const element = document.getElementById(elementId)
     element.classList.add('hidden')
 }
-function showElementById(elementId){
+function showElementById(elementId) {
     const element = document.getElementById(elementId)
     element.classList.remove('hidden')
 }
 
-function done(){
+function done() {
     hideElementById('header')
     hideElementById('main')
     hideElementById('footer')
